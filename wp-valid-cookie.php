@@ -17,10 +17,10 @@
 	
 		if (is_user_logged_in()) {
 			$user = wp_get_current_user();
-			$logged_user["id"] = $user->data->ID;
-			$logged_user["login"] = $user->data->user_login;
-			$logged_user["roles"] = $user->roles;
-			print_r(json_encode($logged_user));
+			$logged_in_user["id"] = $user->data->ID;
+			$logged_in_user["login"] = $user->data->user_login;
+			$logged_in_user["roles"] = $user->roles;
+			print_r(json_encode($logged_in_user));
 			exit();
 		}
 	
@@ -30,4 +30,3 @@
 	}
 
 ?>
-
