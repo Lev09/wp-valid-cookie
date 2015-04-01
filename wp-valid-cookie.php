@@ -16,16 +16,13 @@
 	
 		if (is_user_logged_in()) {
 			$user = wp_get_current_user();
-			$logged_in_user["id"] = $user->data->ID;
-			$logged_in_user["login"] = $user->data->user_login;
-			$logged_in_user["roles"] = $user->roles;
-			print_r(json_encode($logged_in_user));
+			$logged_in_user_login = $user->data->user_login;
+			print_r(json_encode($logged_in_user_login));
 			exit();
 		}
-	
-		$response = array("code"=>401, "status"=>"unauthorized");
-		print_r(json_encode($response));
+		print_r(json_encode(null));
 
 	}
+	print_r(json_encode(null));
 
 ?>
