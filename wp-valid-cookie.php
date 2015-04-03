@@ -8,7 +8,7 @@
 	Author URI: https://github/lev09
 	License: GPL2
 	*/
-	//@include "../../../wp-load.php";
+	//include wp-load.php to be able use wordpress functionality without activating plugin;
 
 	@include "../../../wp-load.php";
 
@@ -18,11 +18,11 @@
 			$user = wp_get_current_user();
 			$logged_in_user_login = $user->data->user_login;
 			print_r(json_encode($logged_in_user_login));
-			exit();
+		}else {
+			print_r("");
 		}
-		print_r(json_encode(null));
 
 	}
-	print_r(json_encode(null));
+	print_r("");
 
 ?>
