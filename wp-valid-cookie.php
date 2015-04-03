@@ -1,13 +1,5 @@
 <?php
-	/*
-	Plugin Name: wp-valid-cookie
-	Plugin URI: https://github/lev09/wp-valid-cookie
-	Description: Plugin to check if cookies are valid send back curent user information.
-	Version: 1.0
-	Author: Levon Hakopyan
-	Author URI: https://github/lev09
-	License: GPL2
-	*/
+
 	//include wp-load.php to be able use wordpress functionality without activating plugin;
 
 	@include "../../../wp-load.php";
