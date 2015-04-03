@@ -22,7 +22,8 @@
 			print_r("");
 		}
 
+	}else{
+		print_r("");
 	}
-	print_r("");
 
 ?>
